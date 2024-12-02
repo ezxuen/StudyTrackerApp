@@ -52,7 +52,7 @@ Study Tracker is an Android application designed to help users manage and organi
 3. Save the task.
 
 ### Mark a Task as Completed
-1. Go to the **Dashboard**.
+1. Go to the **Home**.
 2. Use the checkbox to mark a task as completed.
 
 ### Set a Reminder
