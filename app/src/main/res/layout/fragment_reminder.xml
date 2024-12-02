@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/btnStartTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Timer" />
+
+        <Button
+            android:id="@+id/btnPauseTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause Timer"
+            android:visibility="gone"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/btnResumeTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume Timer"
+            android:visibility="gone"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSetBreakReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Break Reminder"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/txtBreakTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Break Timer: 00:00:00"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+    <Button
+        android:id="@+id/btnResetBreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset break timer" />
+</LinearLayout>

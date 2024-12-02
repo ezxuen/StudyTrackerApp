@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudyTracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_history" >History</string>
+    <string name="title_add_task">Add Task</string>
+    <string name="add_task_description">Add a new task</string>
+    <string name="repeat_task_label">Repeat Task</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Task Name" />
+
+    <EditText
+        android:id="@+id/editTaskTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Task Topic" />
+
+    <Button
+        android:id="@+id/btnSetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Due Date" />
+
+    <TextView
+        android:id="@+id/txtDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="No date selected" />
+
+    <EditText
+        android:id="@+id/taskDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Duration (minutes)"
+        android:minHeight="48dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Task" />
+
+    <Button
+        android:id="@+id/btnDeleteTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B80000"
+        android:text="Delete Task"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+</LinearLayout>

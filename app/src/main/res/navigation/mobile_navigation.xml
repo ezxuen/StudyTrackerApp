@@ -1,0 +1,34 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ezxuen.studytracker.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_add_task"
+        android:name="com.ezxuen.studytracker.ui.home.AddTaskFragment"
+        android:label="@string/title_add_task"
+        tools:layout="@layout/fragment_add_task">
+            <argument
+                android:name="TASK_ID"
+                app:argType="integer"
+                android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_reminder"
+        android:name="com.ezxuen.studytracker.ui.reminder.ReminderFragment"
+        android:label="Reminder"
+        tools:layout="@layout/fragment_reminder" />
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.ezxuen.studytracker.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
+
+</navigation>
